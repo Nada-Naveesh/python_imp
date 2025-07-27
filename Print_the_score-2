@@ -1,0 +1,9 @@
+d=int(input())
+fir=50*3
+if d > 0 and d <= 50:
+    score=d*3
+elif d > 50:
+    r_s=d-50
+    r_d_s=r_s*5
+    score=fir+r_d_s
+print(score)
