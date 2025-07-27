@@ -1,0 +1,21 @@
+d=int(input())
+bonus_score=50
+fir=40*2
+nxt=20*4
+nnt=60*6
+if d <= 40:
+    score=d*2
+elif d <= 60:
+    r_d=d-40
+    r_d_s=r_d*4
+    score=fir+r_d_s
+elif d <= 120:
+    r_d=d-60
+    r_d_s=r_d*6
+    score=fir+nxt+r_d_s
+else:
+    r_d=d-120
+    r_d_s=r_d*8 
+    score=fir+nxt+nnt+r_d_s
+score=score+bonus_score
+print(score)
