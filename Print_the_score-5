@@ -1,0 +1,21 @@
+d=int(input())
+bonus=100
+fir=50*3
+sec=50*5 
+th=100*6
+if d <= 50:
+    score=d*3+bonus
+elif d <= 100:
+    r_s=d-50
+    r_d_s=r_s*5 
+    score=fir+r_d_s+bonus
+elif d <= 200:
+    r_s=d-100
+    r_d_s=r_s*6
+    score=fir+sec+r_d_s+bonus
+elif d > 200:
+    r_s=d-200
+    r_d_s=r_s*10
+    score=fir+sec+th+r_d_s+bonus
+print(score)    
+    
