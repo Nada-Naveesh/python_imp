@@ -1,0 +1,15 @@
+a=int(input())
+re=a
+
+ch=re//500
+re %= 500
+ 
+chk=re//50
+re %= 50
+
+kk=re//10
+re %= 10
+
+ok=re
+
+print("500: "+str(ch),"50: "+str(chk),"10: "+str(kk),"1: "+str(ok))
