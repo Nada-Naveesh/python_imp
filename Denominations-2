@@ -1,0 +1,18 @@
+a=int(input())
+re=a 
+
+f=re // 100
+re %= 100
+
+s=re // 50
+re %= 50
+
+t=re // 10
+re %= 10
+
+ll=re
+
+print("100:"+str(f))
+print("50:"+str(s))
+print("10:"+str(t))
+print("1:"+str(ll))
